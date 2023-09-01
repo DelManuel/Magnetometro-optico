@@ -17,7 +17,7 @@ def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
                              "nidaqmx.system.System.local().devices[0].name"
     """
 
-    cant_puntos = duracion*fs # Tiempo a medir por cantidadde puntos por segundo
+    cant_puntos = int(duracion*fs) # Tiempo a medir por cantidad de puntos por segundo
 
     # Configuraciones del canal de medicion
     terminal_config = nidaqmx.constants.TerminalConfiguration.RSE
@@ -34,7 +34,7 @@ def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
         
         # Medir una cantidad de puntos.
         task.timing.cfg_samp_clk_timing(fs, 
-                                        # samps_per_chan=cant_puntos, 
+                                        samps_per_chan=cant_puntos, 
                                         sample_mode=sample_mode)
         datos = task.read(number_of_samples_per_channel=samples_per_channel)           
 
