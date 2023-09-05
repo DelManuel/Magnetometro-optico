@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 from typing import Tuple
 
-def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
+def medir(duracion: float, fs: int, device_name: str, bounds = [-10,10]) -> np.ndarray:
     """
     Medir un canal de la DAQ.
 
@@ -29,14 +29,15 @@ def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
         # Set voltage channel.
         task.ai_channels.add_ai_voltage_chan(f"{device_name}/ai1", 
                                              terminal_config = terminal_config, 
-                                             max_val=10, 
-                                             min_val=0)
+                                             max_val=bounds[1], 
+                                             min_val=bounds[0])
         
         # Medir una cantidad de puntos.
         task.timing.cfg_samp_clk_timing(fs, 
                                         samps_per_chan=cant_puntos, 
                                         sample_mode=sample_mode)
-        datos = task.read(number_of_samples_per_channel=samples_per_channel)           
+        
+        datos = task.read(number_of_samples_per_channel=samples_per_channel, timeout = duracion+0.1)           
 
     return np.asarray(datos)
 
