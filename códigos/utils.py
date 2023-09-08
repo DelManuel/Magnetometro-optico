@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 from typing import Tuple
 
-def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
+def medir(duracion: float, fs: int, device_name: str, modo = "DIFF") -> np.ndarray:
     """
     Medir un canal de la DAQ.
 
@@ -20,7 +20,11 @@ def medir(duracion: float, fs: int, device_name: str) -> np.ndarray:
     cant_puntos = int(duracion*fs) # Tiempo a medir por cantidad de puntos por segundo
 
     # Configuraciones del canal de medicion
-    terminal_config = nidaqmx.constants.TerminalConfiguration.RSE
+    if modo == "DIFF": # Para medir en modo diferencial 
+        terminal_config = nidaqmx.constants.TerminalConfiguration.DIFF
+    else: # Para medir en modo Referenced Single-Ended
+        terminal_config = nidaqmx.constants.TerminalConfiguration.RSE
+    
     sample_mode = nidaqmx.constants.AcquisitionType.FINITE
     samples_per_channel = nidaqmx.constants.READ_ALL_AVAILABLE
 
