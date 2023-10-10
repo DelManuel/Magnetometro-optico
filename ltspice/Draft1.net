@@ -1,0 +1,27 @@
+* C:\Users\nicof\Desktop\Laboratorios 6 y 7\Repositorio\Magnetometro-optico\ltspice\Draft1.asc
+R1 N005 N001 10k
+C1 N005 N001 150p
+XU1 0 N001 V+ V- N005 OP177A
+XU2 0 N002 V+ V- N006 OP177A
+C2 0 V- 1n
+C3 0 V- 1n
+R2 N006 N002 10k
+C4 N006 N002 150p
+R3 N002 N005 1k
+I1 0 N001 0 AC 2m
+R4 N001 0 750Meg
+V1 V+ V- 15
+XU3 0 N003 V+ V- N007 OP177A
+C5 0 V- 1n
+R5 N007 N003 10k
+C6 N007 N003 150p
+R6 N003 N006 1k
+XU4 0 N004 V+ V- A-B OP177A
+C7 0 V- 1n
+R7 A-B N004 10k
+C8 A-B N004 150p
+R8 N004 N007 1k
+.ac lin 30000 10 100000
+.lib OP177A.lib
+.backanno
+.end
