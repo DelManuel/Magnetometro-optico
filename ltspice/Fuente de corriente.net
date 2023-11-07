@@ -1,0 +1,31 @@
+* C:\Users\nicof\Desktop\Laboratorios 6 y 7\Repositorio\Magnetometro-optico\ltspice\Fuente de corriente.asc
+R1 N001 N004 15k
+R2 N007 0 15k
+V1 N004 0 0.1
+XU1 N007 N001 V+ V- N005 OP177A
+R3 N003 N001 1
+R4 N002 N003 1k
+C1 N002 N001 0.1n
+C2 0 V+ 0.1µ
+V2 V+ 0 12V
+C3 0 V- 0.1µ
+R5 N006 N005 50
+C4 N007 0 0.1n
+Q1 V- N006 N002 0 BD136
+R6 N009 N007 1k
+R7 N002 V+ 10K
+D1 V- N002 1N4148
+R8 N002 N009 1
+L1 N008 N009 1µ
+R9 0 N008 1
+D3 N008 0 1N4148
+V3 0 V- 12V
+.model D D
+.lib C:\Users\nicof\AppData\Local\LTspice\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\nicof\AppData\Local\LTspice\lib\cmp\standard.bjt
+.dc V1 0.1 3 0.1
+.lib OP177A.lib
+.backanno
+.end
