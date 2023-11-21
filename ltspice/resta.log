@@ -1,0 +1,133 @@
+Circuit: * C:\Users\nicof\Desktop\Laboratorios 6 y 7\Repositorio\Magnetometro-optico\ltspice\resta.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+WARNING: Less than two connections to node n007.  This node is used by r21.
+WARNING: Less than two connections to node nc_01.  This node is used by r22.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.995033
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.999816
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 28.0303%
+Source Step = 29.7348%
+Source Step = 31.6288%
+Source Step = 33.5227%
+Source Step = 35.4167%
+Source Step = 37.3106%
+vernier = 0.09375
+Source Step = 39.9621%
+Source Step = 42.803%
+Source Step = 45.6439%
+Source Step = 47.9877%
+Source Step = 48.1963%
+Source Step = 48.2407%
+Source Step = 48.2851%
+Source Step = 48.3295%
+Source Step = 48.3739%
+Source Step = 48.4183%
+vernier = 0.00219727
+Source Step = 48.476%
+Source Step = 48.5426%
+Source Step = 48.6091%
+Source Step = 48.6757%
+Source Step = 48.7423%
+vernier = 0.0032959
+Source Step = 48.8255%
+Source Step = 48.9254%
+Source Step = 49.0253%
+Source Step = 49.1252%
+Source Step = 49.225%
+vernier = 0.00494385
+Source Step = 49.3449%
+Source Step = 49.4947%
+Source Step = 49.6445%
+Source Step = 49.7943%
+Source Step = 49.9441%
+vernier = 0.00741577
+Source Step = 50.1164%
+Source Step = 50.3411%
+Source Step = 50.5659%
+Source Step = 50.7906%
+Source Step = 51.0153%
+vernier = 0.0111237
+Source Step = 51.2625%
+Source Step = 51.5996%
+Source Step = 51.9367%
+Source Step = 52.2737%
+Source Step = 52.6108%
+vernier = 0.0166855
+Source Step = 52.9648%
+Source Step = 53.4704%
+Source Step = 53.976%
+Source Step = 54.4816%
+Source Step = 54.9872%
+Source Step = 55.4929%
+vernier = 0.0250282
+Source Step = 56.2513%
+Source Step = 57.0097%
+Source Step = 57.7682%
+Source Step = 58.5266%
+Source Step = 59.285%
+vernier = 0.0375423
+Source Step = 60.3847%
+Source Step = 61.5224%
+Source Step = 62.66%
+Source Step = 63.7977%
+Source Step = 64.9353%
+vernier = 0.0563135
+Source Step = 66.528%
+Source Step = 68.2345%
+Source Step = 69.941%
+Source Step = 71.6474%
+Source Step = 73.3539%
+vernier = 0.0844703
+Source Step = 75.6577%
+Source Step = 78.2174%
+Source Step = 80.7771%
+Source Step = 83.3368%
+Source Step = 85.8965%
+vernier = 0.126705
+Source Step = 89.2241%
+Source Step = 93.0636%
+Source Step = 96.9032%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Tue Nov 21 12:07:33 2023
+Total elapsed time: 2.584 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 4992
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 338
+fillins = 1146
+solver = Normal
+Avg thread counts: 1.5/0.0/4.0/1.5
+Matrix Compiler1:    5616 opcodes  18.2/8.1/[4.8]
+Matrix Compiler2: 49.64 KB object code size  6.0/5.4/[3.9]
+
