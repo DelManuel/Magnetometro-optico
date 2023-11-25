@@ -1,72 +1,21 @@
 Circuit: * C:\Users\nicof\Desktop\Laboratorios 6 y 7\Repositorio\Magnetometro-optico\ltspice\fotodetectores_mejorados_x3.asc
 
-Early termination of direct N-R iteration.
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
-Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-vernier = 0.5
-vernier = 0.25
-vernier = 0.125
-Gmin = 1.06329e-07
-vernier = 0.0625
-vernier = 0.03125
-vernier = 0.015625
-vernier = 0.0078125
-vernier = 0.00390625
-vernier = 0.00195312
-vernier = 0.000976562
-Gmin = 1.09652e-07
-vernier = 0.000488281
-Gmin = 0
-Gmin stepping failed
 
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source Step = 99.5265%
-vernier = 0.00390625
-Source Step = 99.5324%
-Source Step = 99.562%
-Source Step = 99.5916%
-Source Step = 99.6212%
-Source Step = 99.6508%
-vernier = 0.00146484
-Source Step = 99.6878%
-Source Step = 99.7322%
-Source Step = 99.7766%
-Source Step = 99.821%
-Source Step = 99.8654%
-vernier = 0.00219727
-Source Step = 99.9186%
-Source Step = 99.9852%
-Source stepping succeeded in finding the operating point.
-
-
-Date: Tue Nov 21 15:51:25 2023
-Total elapsed time: 3.324 seconds.
+Date: Fri Nov 24 20:35:41 2023
+Total elapsed time: 0.275 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 4431
-traniter = 1174
-tranpoints = 399
-accept = 312
-rejected = 87
+method = trap
+totiter = 2061
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
 matrix size = 238
-fillins = 763
+fillins = 482
 solver = Normal
-Avg thread counts: 3.3/6.2/4.6/3.3
-Matrix Compiler1: 70.89 KB object code size  26.6/20.0/[20.4]
-Matrix Compiler2: 33.68 KB object code size  7.3/7.0/[4.1]
+Avg thread counts: 2.3/0.0/3.7/2.3
+Matrix Compiler1: 45.37 KB object code size  11.2/7.4/[3.7]
+Matrix Compiler2: 28.74 KB object code size  4.5/5.1/[2.8]
 
