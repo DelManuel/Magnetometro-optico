@@ -1,0 +1,31 @@
+* C:\Users\nicof\Desktop\Laboratorios 6 y 7\Repositorio\Magnetometro-optico\ltspice\resta.asc
+R1 +V N001 270
+R2 -V V2- 270
+V1 +V -V 24
+C1 -V 0 0.1µ
+C2 0 +V 0.1µ
+R3 N001 N004 470
+R4 N004 0 470
+R5 0 N007 470
+R6 N007 V2- 470
+XU1 N001 0 N004 MyTL431
+XU2 0 V2- N007 MyTL431
+I1 N001 N006 SINE(1m 0.1m 10000) AC 3.25m
+I2 N006 V2- SINE(1m 0.15m 10000)
+R17 N005 N002 1k
+C5 N005 N002 150p
+XU5 0 N002 +V -V N005 OP177A
+XU6 0 N003 +V -V A-B OP177A
+C6 0 -V 1n
+C7 0 -V 1n
+R18 A-B N003 1k
+C8 A-B N003 150p
+R19 N003 N005 1k
+R20 N002 N006 .001
+C9 N001 0 1µ
+C10 0 V2- 1µ
+.tran 0 0.001 0.00001 0.000001
+.lib MyTL431.sub
+.lib OP177A.lib
+.backanno
+.end
